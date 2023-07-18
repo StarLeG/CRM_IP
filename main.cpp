@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-#include <QtSql>
-#include <QSqlDatabase>
+#include "database.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -10,15 +10,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.setWindowTitle("CRM \"Индивидуальный предпиниматель\"");
     w.show();
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("..\\CRM_IP\\db\\firm.db");
-    if(!db.open())
-    {
-        qDebug() << "Cannot open database:" << db.lastError();
-    }
-    else
-    {
-        qDebug() << "Open database:" << db.databaseName();
-    }
+    creatConnection();
     return a.exec();
 }

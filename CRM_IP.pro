@@ -11,11 +11,13 @@ CONFIG += c++17
 
 SOURCES += \
     counterparties.cpp \
+    database.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     counterparties.h \
+    database.h \
     mainwindow.h
 
 FORMS += \
