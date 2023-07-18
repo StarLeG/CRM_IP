@@ -18,6 +18,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_File_Exit_triggered()
 {
-
+    QApplication::quit();
 }
 

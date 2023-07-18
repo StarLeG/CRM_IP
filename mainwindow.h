@@ -16,7 +16,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_action_2_triggered();
 
     void on_File_Exit_triggered();
 
