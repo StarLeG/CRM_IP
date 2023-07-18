@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -19,5 +20,14 @@ MainWindow::~MainWindow()
 void MainWindow::on_File_Exit_triggered()
 {
     QApplication::quit();
+}
+
+
+void MainWindow::on_directories_counterparties_triggered()
+{
+    Counterparties counterparties;
+    counterparties.setWindowTitle("Справочник контрагентов");
+    counterparties.setModal(true);
+    counterparties.exec();
 }
 

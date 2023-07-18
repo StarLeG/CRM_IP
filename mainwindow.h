@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <counterparties.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,6 +19,8 @@ public:
 private slots:
 
     void on_File_Exit_triggered();
+
+    void on_directories_counterparties_triggered();
 
 private:
     Ui::MainWindow *ui;

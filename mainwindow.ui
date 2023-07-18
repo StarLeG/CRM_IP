@@ -20,17 +20,24 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="File">
     <property name="title">
      <string>Файл</string>
     </property>
     <addaction name="separator"/>
     <addaction name="File_Exit"/>
    </widget>
-   <addaction name="menu"/>
+   <widget class="QMenu" name="Directories">
+    <property name="title">
+     <string>Справочники</string>
+    </property>
+    <addaction name="directories_counterparties"/>
+   </widget>
+   <addaction name="File"/>
+   <addaction name="Directories"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="File_Exit">
@@ -39,6 +46,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="directories_counterparties">
+   <property name="text">
+    <string>Контрагенты</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
    </property>
   </action>
  </widget>
