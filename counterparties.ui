@@ -6,15 +6,42 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>834</width>
     <height>402</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QPushButton" name="AddNote_Btn">
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="DelNote_Btn">
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ChangeNote_Btn">
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Exit_Btn">
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
     <widget class="QTableView" name="tableView"/>
    </item>
   </layout>
