@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <counterparties.h>
+#include "include/firms.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,5 +25,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    Firms *firms;
+
 };
 #endif // MAINWINDOW_H
