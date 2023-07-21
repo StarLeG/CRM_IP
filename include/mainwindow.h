@@ -21,7 +21,8 @@ private slots:
 
     void on_File_Exit_triggered();
 
-    void on_directories_counterparties_triggered();
+
+    void on_firms_btn_triggered();
 
 private:
     Ui::MainWindow *ui;

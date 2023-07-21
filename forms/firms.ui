@@ -29,8 +29,32 @@
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="add_btn"/>
+    <addaction name="change_btn"/>
+    <addaction name="del_btn"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="add_btn">
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </action>
+  <action name="change_btn">
+   <property name="text">
+    <string>Изменить</string>
+   </property>
+  </action>
+  <action name="del_btn">
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
