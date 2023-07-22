@@ -40,7 +40,7 @@ private:
     bool openDataBase();        // Открытие базы данных
     bool restoreDataBase();     // Восстановление базы данных
     void closeDataBase();       // Закрытие базы данных
-   // bool createTable();         // Создание базы таблицы в базе данных
+    bool createTable();         // Создание базы таблицы в базе данных
 
 public slots:
   //  bool inserIntoTable(const QVariantList &data);      // Добавление записей в таблицу
