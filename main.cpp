@@ -1,7 +1,7 @@
-#include "include/mainwindow.h"
+#include "mainwindow.h"
 
 #include <QApplication>
-#include "include/database.h"
+#include "database.h"
 
 
 int main(int argc, char *argv[])

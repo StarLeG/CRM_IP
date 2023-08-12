@@ -26,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -36,10 +36,36 @@
     <addaction name="add_btn"/>
     <addaction name="change_btn"/>
     <addaction name="del_btn"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="exit_btn"/>
    </widget>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="add_btn"/>
+   <addaction name="change_btn"/>
+   <addaction name="del_btn"/>
+  </widget>
   <action name="add_btn">
    <property name="text">
     <string>Добавить</string>
@@ -53,6 +79,11 @@
   <action name="del_btn">
    <property name="text">
     <string>Удалить</string>
+   </property>
+  </action>
+  <action name="exit_btn">
+   <property name="text">
+    <string>Выход</string>
    </property>
   </action>
  </widget>

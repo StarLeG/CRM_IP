@@ -12,3 +12,9 @@ Firms::~Firms()
 {
     delete ui;
 }
+
+void Firms::on_exit_btn_triggered()
+{
+    this->close();
+}
+

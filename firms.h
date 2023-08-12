@@ -15,6 +15,9 @@ public:
     explicit Firms(QWidget *parent = nullptr);
     ~Firms();
 
+private slots:
+    void on_exit_btn_triggered();
+
 private:
     Ui::Firms *ui;
 };
